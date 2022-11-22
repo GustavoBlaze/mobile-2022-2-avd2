@@ -24,7 +24,7 @@ const transform = (invoice: Omit<ListInvoiceProps, 'pis' | 'cofins' | 'csll' | '
   const pis = invoice_value * 0.0065;
   const cofins = invoice_value * 0.03;
   const csll = invoice_value * 0.01;
-  const iss = invoice_value * 0.05;
+  const iss = invoice_value * 0.04;
   const liquid_value = invoice_value - (pis + cofins + csll + iss);
 
   return {
